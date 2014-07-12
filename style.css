@@ -63,8 +63,8 @@ a{
 .tree{
 	position:absolute;
 	background:url(images/tree.png) top left no-repeat;
-	left:70px;
-	bottom:100px;	
+	left:570px;
+	bottom:40px;	
 	width:173px;
 	height:260px;
 	z-index:4;
