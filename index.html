@@ -1,121 +1,175 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<title>Kill Mosquitoes</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Mosquito Hunter</title>
     <!-- TODO: Create favion.ico-->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<script src="build/libs.min.js"></script>
-<script src="build/duckhunt.min.js"></script>
-<script src="main.js"></script>
-<style>
-</style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <!-- added styling -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <script src="build/libs.min.js"></script>
+    <script src="build/duckhunt.min.js"></script>
+    <script src="main.js"></script>
+
 </head>
 <body>
-<div id="links" class="linkText"><a href="http://mattsurabian.com/">Home</a> &nbsp; <a href="https://github.com/nanap/malaria">DuckHunt</a> &nbsp; <a href="http://mattsurabian.com/choosewisely/">ChooseWisely</a></div>
+    <!-- The Navigation Bar -->
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mosquito Hunter</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.html">About</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- end of navigation bar -->
+
+    <!-- This is the heading -->
+    <div class="row" style="padding-top:7%">
+        <div>
+            <center>
+                <h1>Mosquito Hunter via HTML5 + JavaScript</h1>
+                <h3>
+                    with level creator!
+                </h3>
+            </center>
+        </div>
+    </div>
+    <!-- end of heading -->
+
+    <div class="container">
+        <div class="topMenu">
+            <div id="mute" class="mute">mute</div>
+        </div>
+        <!-- end of heading -->
 
 
-<div id="header" class="header"><h1>Duck Hunt via HTML5 + JavaScript<br/><small>with level creator!</small></h1></div>
-<div class="topMenu">
-<div id="mute" class="mute">mute</div>
-<div class="social linkText"><a href="http://twitter.com/mattsurabian" target="_blank">Twitter</a> &nbsp <a href="https://github.com/MattSurabian/DuckHunt-JS" target="_blank">GitHub Repo</a></div>
-</div>
-<div id="gameField" class="gameField">
+        <div id="gameField" class="gameField">
 
 
-<div id="game" class="game">
-    <div id="theFlash" class="theFlash"></div>
-    <div id="tree" class="tree"></div>
-    <div id="grass" class="grass"></div>
-</div>
-<div class="gameinfo ammo" id="ammo"></div>
-<div class="gameinfo waves" id="waves"></div>
-<div class="gameinfo duckBoard" id="duckBoard"></div>
-<div class="gameinfo scoreboard" id="scoreboard"></div>
+            <div id="game" class="game">
+                <div id="theFlash" class="theFlash"></div>
+                <div id="tree" class="tree"></div>
+                <div id="grass" class="grass"></div>
+            </div>
+            <div class="gameinfo ammo" id="ammo"></div>
+            <div class="gameinfo waves" id="waves"></div>
+            <div class="gameinfo duckBoard" id="duckBoard"></div>
+            <div class="gameinfo scoreboard" id="scoreboard"></div>
 
-<div id="loser" class="messages loser">
-Are you kidding me with that?
-<br/><br/>
-<div class="tryAgain">Try Again</div>
-</div>
-
-
-<div id="winner" class="messages winner">
-You are a champion!  
-</div>
+            <div id="loser" class="messages loser">
+                Are you kidding me with that?
+                <br/><br/>
+                <div class="tryAgain">Try Again</div>
+            </div>
 
 
-<div id="level" class="messages level">
-Level 1
-</div>
+            <div id="winner" class="messages winner">
+                You are a champion!  
+            </div>
+        </div>
 
-</div>
+        <div id="level" class="messages level">
+            Level 1
+        </div>
 
-<div id="levelCreate" class="levelCreator"><br/>
-<strong>Level Creator:</strong><br/>
-Waves: <input id="LCwaves" name="LCwaves" size="3" type="text" value="1"/> &nbsp; &nbsp; Starting Ducks: <input name="LCducks" id="LCducks" size="3" type="text" value="2"/> &nbsp; &nbsp; Starting Bullets: <input type="text" name="LCbullets" id="LCbullets" size="3" value="4"/> &nbsp; &nbsp; Wave Time (sec): <input type="text" name="LCwavetime" id="LCwavetime" size="3" value="10"/> &nbsp; &nbsp; Difficulty: <input type="text" name="LCdif" id="LCdif" size="3" value="5"/>
-<div id="doit" class="doit">Bring It On</div>
-<br/><br/>
-<small>It's probably worth mentioning that it's very possible to crash your browser if you're overzealous with the level creator.  Wave time is the amount of time before the ducks fly away.  Difficulty is rated from 1-10 and controls the speed of the ducks.  Anything over 8 is kind of ridiculous. The bullet and duck counters have a maximum size- you will receive everything you configure but they may not all display if the number of bullets or ducks is too high.</small>
-</div>
+    </div>
 
-<div id="info"></div>
+    <div id="levelCreate" class="levelCreator"><br/>
+        <strong>Level Creator:</strong><br/>
+        Waves: <input id="LCwaves" name="LCwaves" size="3" type="text" value="1"/> &nbsp; &nbsp; Starting Ducks: <input name="LCducks" id="LCducks" size="3" type="text" value="2"/> &nbsp; &nbsp; Starting Bullets: <input type="text" name="LCbullets" id="LCbullets" size="3" value="4"/> &nbsp; &nbsp; Wave Time (sec): <input type="text" name="LCwavetime" id="LCwavetime" size="3" value="10"/> &nbsp; &nbsp; Difficulty: <input type="text" name="LCdif" id="LCdif" size="3" value="5"/>
+        <div id="doit" class="doit">Bring It On</div>
+        <br/><br/>
+    </div>
+    <div class=" container">
+        <div class="row-fluid" style="color: #999">
+            <small>It's probably worth mentioning that it's very possible to crash your browser if you're overzealous with the level creator.  Wave time is the amount of time before the ducks fly away.  Difficulty is rated from 1-10 and controls the speed of the ducks.  Anything over 8 is kind of ridiculous. The bullet and duck counters have a maximum size- you will receive everything you configure but they may not all display if the number of bullets or ducks is too high.</small>
+        </div>
+    </div>
 
-<audio class="sounds" id="gunSound" preload="auto">
-    <source type="audio/ogg" src="sounds/gunSound.ogg"/>
-    <source type="audio/mp3" src="sounds/gunSound.mp3"/>
-</audio>
+    <div id="info"></div>
 
-<audio class="sounds" id="gunSound2" preload="auto">
-    <source type="audio/ogg" src="sounds/gunSound2.ogg"/>
-    <source type="audio/mp3" src="sounds/gunSound2.mp3"/>
-</audio>
+    <audio class="sounds" id="gunSound" preload="auto">
+        <source type="audio/ogg" src="sounds/gunSound.ogg"/>
+        <source type="audio/mp3" src="sounds/gunSound.mp3"/>
+    </audio>
 
-<audio class="sounds" id="laugh" preload="auto">
-    <source type="audio/ogg" src="sounds/laugh.ogg"/>
-    <source type="audio/mp3" src="sounds/laugh.mp3"/>
-</audio>
+    <audio class="sounds" id="gunSound2" preload="auto">
+        <source type="audio/ogg" src="sounds/gunSound2.ogg"/>
+        <source type="audio/mp3" src="sounds/gunSound2.mp3"/>
+    </audio>
 
-<audio class="sounds" id="quak" preload="auto">
-    <source type="audio/ogg" src="sounds/quak.ogg"/>
-    <source type="audio/mp3" src="sounds/quak.mp3"/>
-</audio>
+    <audio class="sounds" id="laugh" preload="auto">
+        <source type="audio/ogg" src="sounds/laugh.ogg"/>
+        <source type="audio/mp3" src="sounds/laugh.mp3"/>
+    </audio>
 
-<audio class="sounds" id="thud" preload="auto">
-    <source type="audio/ogg" src="sounds/thud.ogg"/>
-    <source type="audio/mp3" src="sounds/thud.mp3"/>
-</audio>
+    <audio class="sounds" id="quak" preload="auto">
+        <source type="audio/ogg" src="sounds/quak.ogg"/>
+        <source type="audio/mp3" src="sounds/quak.mp3"/>
+    </audio>
 
-<audio class="sounds" id="ohyeah" preload="auto">
-    <source type="audio/ogg" src="sounds/ohYeah.ogg"/>
-    <source type="audio/mp3" src="sounds/ohYeah.mp3"/>
-</audio>
+    <audio class="sounds" id="thud" preload="auto">
+        <source type="audio/ogg" src="sounds/thud.ogg"/>
+        <source type="audio/mp3" src="sounds/thud.mp3"/>
+    </audio>
 
-<audio class="sounds" id="quacking" loop="loop">
-    <source type="audio/ogg" src="sounds/quacking.ogg"/>
-    <source type="audio/mp3" src="sounds/quacking.mp3"/>
-</audio>
+    <audio class="sounds" id="ohyeah" preload="auto">
+        <source type="audio/ogg" src="sounds/ohYeah.ogg"/>
+        <source type="audio/mp3" src="sounds/ohYeah.mp3"/>
+    </audio>
 
-<audio class="sounds" id="sniff" preload="auto">
-    <source type="audio/ogg" src="sounds/sniff.ogg"/>
-    <source type="audio/mp3" src="sounds/sniff.mp3"/>
-</audio>
+    <audio class="sounds" id="quacking" loop="loop">
+        <source type="audio/ogg" src="sounds/quacking.ogg"/>
+        <source type="audio/mp3" src="sounds/quacking.mp3"/>
+    </audio>
 
-<audio class="sounds" id="bark" preload="auto">
-    <source type="audio/ogg" src="sounds/barkDucks.ogg"/>
-    <source type="audio/mp3" src="sounds/barkDucks.mp3"/>
-</audio>
+    <audio class="sounds" id="sniff" preload="auto">
+        <source type="audio/ogg" src="sounds/sniff.ogg"/>
+        <source type="audio/mp3" src="sounds/sniff.mp3"/>
+    </audio>
 
-<audio class="sounds" id="victory" preload="auto">
-    <source type="audio/ogg" src="sounds/champ.ogg"/>
-    <source type="audio/mp3" src="sounds/champ.mp3"/>
-</audio>
+    <audio class="sounds" id="bark" preload="auto">
+        <source type="audio/ogg" src="sounds/barkDucks.ogg"/>
+        <source type="audio/mp3" src="sounds/barkDucks.mp3"/>
+    </audio>
 
-<audio class="sounds" id="defeat" preload="auto">
-    <source type="audio/ogg" src="sounds/loserSound.ogg"/>
-    <source type="audio/mp3" src="sounds/loserSound.mp3"/>
-</audio>
+    <audio class="sounds" id="victory" preload="auto">
+        <source type="audio/ogg" src="sounds/champ.ogg"/>
+        <source type="audio/mp3" src="sounds/champ.mp3"/>
+    </audio>
+
+    <audio class="sounds" id="defeat" preload="auto">
+        <source type="audio/ogg" src="sounds/loserSound.ogg"/>
+        <source type="audio/mp3" src="sounds/loserSound.mp3"/>
+    </audio>
+
+    <!-- additional javascript -->
+    <script src="js/tweaks.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
