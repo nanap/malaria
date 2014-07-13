@@ -45,6 +45,7 @@ a{
 	background:#64b0ff;	
 	cursor:pointer;
 	overflow:hidden;
+	left: 0;
 }
 .game{
 	width:900px;
@@ -145,7 +146,7 @@ a{
 	color:#ffffff;
 	font-size:24px;
 	position:absolute;
-	top:150px;
+	top:100px;
 	left:200px;
 	display:none;
 }
