@@ -1,3 +1,7 @@
+.marqueeposition{
+  position-top: 100px;
+}
+
 div{
 	-webkit-user-select: none;
 -khtml-user-select: none;
@@ -145,7 +149,7 @@ a{
 	color:#ffffff;
 	font-size:24px;
 	position:absolute;
-	top:150px;
+	top:100px;
 	left:200px;
 	display:none;
 }
