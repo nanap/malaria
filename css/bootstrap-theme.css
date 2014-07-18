@@ -3,6 +3,9 @@
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.marqueeposition{
+  position-top: 100px;
+}
 
 .btn-default,
 .btn-primary,

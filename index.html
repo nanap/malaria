@@ -4,8 +4,8 @@
 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Mosquito Hunter</title>
-    <!-- TODO: Create favion.ico-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- TODO: Create /on.ico-->
+    <!--     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
     <!-- added styling -->
@@ -22,52 +22,53 @@
     <!-- The Navigation Bar -->
     <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
         <div class="container">
-            <div class="navbar-header">
+            <div class=" col-sm- navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Mosquito Hunter</a>
+                <a class="navbar-brand" href="index.html" style="font-size:35px" > <strong>Malaria Hunter</strong></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="about.html">About</a>
-                    </li>
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                </ul>
+            <div class="col-sm-3" style="text-align:left">
+                <div class=" collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="about.html">About</a>
+                        </li>
+                        <li><a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Donnation button, Collect the nav links, forms, and other content for toggling -->
+            <div > 
+                <div class="col-md-offset-1 col-sm-4 marqueeposition" > <marquee style="color : red"> A child Dies From Malaria Every 1 hr! Play This Game For 1 hr To Raise a $1 For A Child! </marquee></div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
-    <!-- end of navigation bar -->
 
-    <!-- This is the heading -->
-    <div class="row" style="padding-top:7%">
-        <div>
+        <!-- end of navigation bar -->
+        
+        <!-- This is the heading -->
+        <div class="row col-sm-12" >
             <center>
-                <h1>Mosquito Hunter
-                    <br>
-                    <br>
-                    <p>
-                        <a href="#" class="btn btn-default btn-warning btn-lg"> Please Donate</a><br>
-                        <sub><span style="font-size: 45%;">Make a donation to help save a life from malaria</sub>
-                    </p>
-                    
-                </h1>
+               <br><br> <br>
+
             </center>
         </div>
-    </div>
-    <!-- end of heading -->
+        <!-- end of heading -->
+    
 
     <div class="container">
         <div class="topMenu">
-            <div id="mute" class="mute">mute</div>
+            <div id="mute" class="col-sm-12 mute">Mute</div> 
         </div>
         <!-- end of heading -->
 
@@ -86,7 +87,8 @@
             <div class="gameinfo scoreboard" id="scoreboard"></div>
 
             <div id="loser" class="messages loser">
-                Are you kidding me with that?
+               <!--  Are you kidding me with that? -->
+                Over half a million people die from malaria each year.
                 <br/><br/>
                 <div class="tryAgain">Try Again</div>
             </div>
@@ -104,15 +106,15 @@
     </div>
     
 
-    <div id="levelCreate" class="levelCreator"><br/>
-        <strong>Level Creator:</strong><br/>
-        Waves: <input id="LCwaves" name="LCwaves" size="3" type="text" value="1"/> &nbsp; &nbsp; Starting Ducks: <input name="LCducks" id="LCducks" size="3" type="text" value="2"/> &nbsp; &nbsp; Starting Bullets: <input type="text" name="LCbullets" id="LCbullets" size="3" value="4"/> &nbsp; &nbsp; Wave Time (sec): <input type="text" name="LCwavetime" id="LCwavetime" size="3" value="10"/> &nbsp; &nbsp; Difficulty: <input type="text" name="LCdif" id="LCdif" size="3" value="5"/>
-        <div id="doit" class="doit">Bring It On</div>
+    <div class"col-sm-12" id="levelCreate" class="levelCreator"><br/>
+        <strong>Level Creator:</strong>
+        Waves: <input id="LCwaves" name="LCwaves" size="3" type="text" value="1"/> &nbsp; &nbsp; Starting Number: <input name="LCducks" id="LCducks" size="3" type="text" value="2"/> &nbsp; &nbsp; Bullets: <input type="text" name="LCbullets" id="LCbullets" size="3" value="4"/> &nbsp; &nbsp; Wave Time (sec): <input type="text" name="LCwavetime" id="LCwavetime" size="3" value="10"/> &nbsp; &nbsp; Difficulty: <input type="text" name="LCdif" id="LCdif" size="3" value="5"/>
+        <div id="doit" class="doit"> Attack</div>
         <br/><br/>
     </div>
     <div class=" container">
         <div class="row-fluid" style="color: #999">
-            <small>It's probably worth mentioning that it's very possible to crash your browser if you're overzealous with the level creator.  Wave time is the amount of time before the ducks fly away.  Difficulty is rated from 1-10 and controls the speed of the mosquitoes.  Anything over 8 is kind of ridiculous. The bullet and mosquito counters have a maximum size- you will receive everything you configure but they may not all display if the number of bullets or mosquitoes is too high.</small>
+            <small>It's worth mentioning that don't go above leve 8.  Wave time is the amount of time before the mosquitoes fly away.  Difficulty is rated from 1-10 and controls the speed of the mosquitoes. The bullet and mosquito counters have a maximum size- you will receive everything you configure but they may not all display if the number of bullets or mosquitoes is too high.</small>
         </div>
     </div>
 
